@@ -3,11 +3,11 @@ import { StyleSheet, Text } from "react-native";
 import { IRestaurant } from "../../../types";
 import { Card } from "react-native-paper";
 
-interface RestaurantInfoProps {
+interface RestaurantInfoCardProps {
     restaurant: IRestaurant;
 }
 
-const RestaurantInfo: FC<RestaurantInfoProps> = ({ restaurant }) => {
+const RestaurantInfoCard: FC<RestaurantInfoCardProps> = ({ restaurant }) => {
     return (
         <Card elevation={5} style={styles.card}>
             <Card.Cover
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
         padding: 16
     }
 });
-export default RestaurantInfo;
+export default RestaurantInfoCard;
