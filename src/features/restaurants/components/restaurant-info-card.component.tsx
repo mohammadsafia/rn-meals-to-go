@@ -10,7 +10,6 @@ interface RestaurantInfoCardProps {
 const Title = styled.Text`
     padding: 16px;
     color: ${(props: { theme: ITheme }) => props.theme.colors.ui.primary};
-    font-size: 40px;
 `;
 
 const RestaurantCard = styled(Card)`
