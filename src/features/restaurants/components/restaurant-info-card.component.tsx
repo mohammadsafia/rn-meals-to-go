@@ -8,17 +8,20 @@ interface RestaurantInfoCardProps {
 }
 
 const Title = styled.Text`
-    padding: 16px;
+    padding: ${(props: { theme: ITheme }) => props.theme.space[3]};
     color: ${(props: { theme: ITheme }) => props.theme.colors.ui.primary};
+    font-family: ${(props: { theme: ITheme }) => props.theme.fonts.body};
 `;
 
 const RestaurantCard = styled(Card)`
-    background-color: white;
+    background-color: ${(props: { theme: ITheme }) =>
+        props.theme.colors.bg.primary};
 `;
 
 const RestaurantCardCover = styled(Card.Cover)`
-    padding: 20px;
-    background-color: white;
+    padding: ${(props: { theme: ITheme }) => props.theme.space[3]};
+    background-color: ${(props: { theme: ITheme }) =>
+        props.theme.colors.bg.primary};
 `;
 
 const RestaurantInfoCard: FC<RestaurantInfoCardProps> = ({ restaurant }) => {
