@@ -1,18 +1,15 @@
 import { ColorsTypes } from "./colors.types";
-import { IFontWeight } from "./fonts.types";
+import { IFonts, IFontSizes, IFontWeight } from "./fonts.types";
 import { ILineHeight } from "./spacing.types";
-
-export * from "./colors.types";
-export * from "./fonts.types";
-export * from "./spacing.types";
-
-class IFontSize {}
 
 export interface ITheme {
     colors: ColorsTypes;
-    fontSize: IFontSize;
+    fontSize: IFontSizes;
     fontWeight: IFontWeight;
     lineHeight: ILineHeight;
+    fonts: IFonts;
+    sizes: string[];
+    space: string[];
 }
 export interface IRestaurant {
     name?: string;
@@ -23,3 +20,7 @@ export interface IRestaurant {
     rating?: number;
     isClosedTemporarily?: boolean;
 }
+
+export * from "./colors.types";
+export * from "./fonts.types";
+export * from "./spacing.types";
