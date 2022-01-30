@@ -20,12 +20,14 @@
         "react-native": "0.64.3",
         "react-native-paper": "^4.11.2",
         "react-native-vector-icons": "^9.0.0",
-        "react-native-web": "0.17.1"
+        "react-native-web": "0.17.1",
+        "styled-components": "^5.3.3"
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
         "@types/react": "~17.0.21",
         "@types/react-native": "~0.64.12",
+        "@types/styled-components": "^5.1.21",
         "@typescript-eslint/eslint-plugin": "^5.10.1",
         "eslint": "^7.32.0",
         "eslint-config-airbnb-typescript": "^16.1.0",
